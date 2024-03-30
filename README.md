@@ -1,6 +1,6 @@
 # OpenLLaMA
 
-[![Build Status](https://github.com/computeio/openllama/actions/workflows/go.yml/badge.svg)](https://github.com/computeio/openllama/actions/workflows/ci.yml)
+[![Build Status](https://github.com/computeio/openllama/actions/workflows/rust.yml/badge.svg)](https://github.com/computeio/openllama/actions/workflows/rust.yml)
 [![LICENSE](https://img.shields.io/github/license/computeio/openllama.svg)](https://github.com/computeio/openllama/blob/master/LICENSE)
 [![Language](https://img.shields.io/badge/Language-Rust-blue.svg)](https://www.rust-lang.org/)
 [![Rust Report Card](https://rust-reportcard.xuri.me/report/github.com/computeio/openllama)](https://rust-reportcard.xuri.me/report/github.com/computeio/openllama)
@@ -14,6 +14,17 @@
 
 ## Overview
 
+A Rust LLaMA project to **load**, **serve** and **extend** LLM models.
+
+## Key Objectives
+
+- [ ] Support both [GGML](https://github.com/rustformers/llm/blob/main/crates/ggml/README.md) and [HF](https://github.com/ggerganov/llama.cpp/discussions/2948)(HuggingFace) models
+- [ ] Support a standard web server for inference
+- [ ] Support download HF models through [hf-hub](https://github.com/huggingface/hf-hub)
+- [ ] Support Nvidia GPUs
+- [ ] Support AMD GPUs
+- [ ] Support macOS, Linux, Windows, etc.
+- [ ] OpenAI compatible [API spec](https://spec.openapis.org/oas/latest.html)
 
 ## Usage
 
