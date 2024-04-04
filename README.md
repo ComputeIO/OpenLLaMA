@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/computeio/openllama/actions/workflows/go.yml/badge.svg)](https://github.com/computeio/openllama/actions/workflows/ci.yml)
 [![LICENSE](https://img.shields.io/github/license/computeio/openllama.svg)](https://github.com/computeio/openllama/blob/master/LICENSE)
-[![Language](https://img.shields.io/badge/Language-Go-blue.svg)](https://golang.org/)
+[![Language](https://img.shields.io/badge/Language-Rust-blue.svg)](https://www.rust-lang.org/)
 [![Go Report Card](https://goreportcard.com/badge/github.com/computeio/openllama)](https://goreportcard.com/report/github.com/computeio/openllama)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2761/badge)](https://bestpractices.coreinfrastructure.org/projects/6232)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/computeio/openllama/badge)](https://securityscorecards.dev/viewer/?uri=github.com/computeio/openllama)
