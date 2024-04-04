@@ -10,7 +10,7 @@
 [![CLOMonitor](https://img.shields.io/endpoint?url=https://clomonitor.io/api/projects/cncf/chubao-fs/badge)](https://clomonitor.io/projects/cncf/chubao-fs)
 [![Release](https://img.shields.io/github/v/release/computeio/openllama.svg?color=161823&style=flat-square&logo=smartthings)](https://github.com/computeio/openllama/releases)
 [![Tag](https://img.shields.io/github/v/tag/computeio/openllama.svg?color=ee8936&logo=fitbit&style=flat-square)](https://github.com/computeio/openllama/tags)
-[![Chat](https://static.zulipchat.com/static/images/logo/zulip-org-logo.svg?version=0)](https://openllama.zulipchat.com/)
+[![Chat](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://openllama.zulipchat.com/)
 
 ## Overview
 
