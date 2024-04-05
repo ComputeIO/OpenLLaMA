@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/computeio/openllama/actions/workflows/go.yml/badge.svg)](https://github.com/computeio/openllama/actions/workflows/ci.yml)
 [![LICENSE](https://img.shields.io/github/license/computeio/openllama.svg)](https://github.com/computeio/openllama/blob/master/LICENSE)
 [![Language](https://img.shields.io/badge/Language-Rust-blue.svg)](https://www.rust-lang.org/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/computeio/openllama)](https://goreportcard.com/report/github.com/computeio/openllama)
+[![Rust Report Card](https://rust-reportcard.xuri.me/report/github.com/computeio/openllama)](https://rust-reportcard.xuri.me/report/github.com/computeio/openllama)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2761/badge)](https://bestpractices.coreinfrastructure.org/projects/6232)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/computeio/openllama/badge)](https://securityscorecards.dev/viewer/?uri=github.com/computeio/openllama)
 [![Codecov](https://img.shields.io/codecov/c/github/computeio/openllama?style=flat-square&logo=codecov)](https://codecov.io/gh/computeio/openllama)
@@ -21,7 +21,7 @@
 
 ## License
 
-Multiple is licensed under the [MIT](https://opensource.org/license/mit).
+OpenLLaMA is licensed under the [MIT](https://opensource.org/license/mit).
 For detail see [LICENSE](LICENSE).
 
 ## Note
