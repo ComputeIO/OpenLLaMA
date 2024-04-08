@@ -25,6 +25,8 @@ A Rust LLaMA project to **load**, **serve** and **extend** LLM models.
 - [ ] Support AMD GPUs
 - [ ] Support macOS, Linux, Windows, etc.
 - [ ] OpenAI compatible [API spec](https://spec.openapis.org/oas/latest.html)
+- [ ] Support more GPUs
+- [ ] Support LPCP(Large-scale Parallel Central Processing)
 
 ## Usage
 
