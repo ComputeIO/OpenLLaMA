@@ -52,3 +52,32 @@ to PRs that show up "green". So maybe check back and ensure that the CI comes up
 doesn't, and you don't understand why, please reach out to us.
 
 There are bonus points for adding your own tests ;-)
+
+### Coding style
+
+- Follow the instructions of [The Rust Programming Language](https://doc.rust-lang.org/book/).
+- Follow [api-guidelines](https://rust-lang.github.io/api-guidelines/)
+- Ensure that your code is formatted using `rustfmt` before submitting it.
+- Ensure that each new source file starts with a license header.
+- Ensure that there are enough unit tests.
+- Ensure that there are enough comments.
+
+### Commit message guidelines
+
+- Follow the [Angular commit guidelines](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#commit).
+- Commits must be signed and the signature must match the author.
+- If there is an issue, you need to link to related issues.
+
+Example:
+
+> For example, the author information must match the Signed-off-by information.
+```shell
+Author: users <users@openllama.groups.io>
+Date:   Thu Apr 27 09:40:02 2023 +0800
+
+    feat(common): this is an example
+
+    close: #1
+
+    Signed-off-by: users <users@openllama.groups.io>
+```
