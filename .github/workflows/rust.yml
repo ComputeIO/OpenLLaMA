@@ -8,41 +8,31 @@ jobs:
     name: cargo test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - name: Harden Runner
+        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      - uses: actions-rust-lang/setup-rust-toolchain@b113a30d27a8e59c969077c0a0168cc13dab5ffc # v1.8.0
       - run: cargo test --all-features
         id: test
-      - name: Send a stream message
-        uses: zulip/github-actions-zulip/send-message@v1
-        with:
-          api-key: ${{ secrets.ZULIP_API_KEY }}
-          email: "devops-bot@openllama.zulipchat.com"
-          organization-url: "https://openllama.zulipchat.com"
-          to: "general"
-          type: "stream"
-          topic: "devops"
-          content: "✨[${{github.action_repository}}(${{github.head_ref}} → ${{github.base_ref}})](${{github.server_url}}/${{github.repository}}/actions/runs/${{github.run_id}}) [test] : ${{ steps.test.outcome }}"
 
   # Check formatting with rustfmt
   formatting:
     name: cargo fmt
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Harden Runner
+        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       # Ensure rustfmt is installed and setup problem matcher
-      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - uses: actions-rust-lang/setup-rust-toolchain@b113a30d27a8e59c969077c0a0168cc13dab5ffc # v1.8.0
         with:
           components: rustfmt
       - name: Rustfmt Check
-        uses: actions-rust-lang/rustfmt@v1
+        uses: actions-rust-lang/rustfmt@2d1d4e9f72379428552fa1def0b898733fb8472d # v1.1.0
         id: rustfmt
-      - name: Send a stream message
-        uses: zulip/github-actions-zulip/send-message@v1
-        with:
-          api-key: ${{ secrets.ZULIP_API_KEY }}
-          email: "devops-bot@openllama.zulipchat.com"
-          organization-url: "https://openllama.zulipchat.com"
-          to: "general"
-          type: "stream"
-          topic: "devops"
-          content: "✨[${{github.action_repository}}(${{github.head_ref}} → ${{github.base_ref}})](${{github.server_url}}/${{github.repository}}/actions/runs/${{github.run_id}}) [rustfmt] : ${{ steps.rustfmt.outcome }}"
