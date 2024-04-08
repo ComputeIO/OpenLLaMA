@@ -17,16 +17,6 @@ jobs:
       - uses: actions-rust-lang/setup-rust-toolchain@b113a30d27a8e59c969077c0a0168cc13dab5ffc # v1.8.0
       - run: cargo test --all-features
         id: test
-      - name: Send a stream message
-        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
-        with:
-          api-key: ${{ secrets.ZULIP_API_KEY }}
-          email: "devops-bot@openllama.zulipchat.com"
-          organization-url: "https://openllama.zulipchat.com"
-          to: "general"
-          type: "stream"
-          topic: "devops"
-          content: "✨[${{github.action_repository}}(${{github.head_ref}} → ${{github.base_ref}})](${{github.server_url}}/${{github.repository}}/actions/runs/${{github.run_id}}) [test] : ${{ steps.test.outcome }}"
 
   # Check formatting with rustfmt
   formatting:
@@ -46,13 +36,3 @@ jobs:
       - name: Rustfmt Check
         uses: actions-rust-lang/rustfmt@2d1d4e9f72379428552fa1def0b898733fb8472d # v1.1.0
         id: rustfmt
-      - name: Send a stream message
-        uses: zulip/github-actions-zulip/send-message@e4c8f27c732ba9bd98ac6be0583096dea82feea5 # v1.0.2
-        with:
-          api-key: ${{ secrets.ZULIP_API_KEY }}
-          email: "devops-bot@openllama.zulipchat.com"
-          organization-url: "https://openllama.zulipchat.com"
-          to: "general"
-          type: "stream"
-          topic: "devops"
-          content: "✨[${{github.action_repository}}(${{github.head_ref}} → ${{github.base_ref}})](${{github.server_url}}/${{github.repository}}/actions/runs/${{github.run_id}}) [rustfmt] : ${{ steps.rustfmt.outcome }}"
