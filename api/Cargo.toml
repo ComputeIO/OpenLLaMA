@@ -1,6 +1,5 @@
-workspace = { members = [ "api", "common","llama"] }
 [package]
-name = "openllama"
+name = "api"
 version = "0.1.0"
 edition = "2021"
 
